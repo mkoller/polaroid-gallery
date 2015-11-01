@@ -478,13 +478,13 @@
 				else {
 					classie.removeClass( this.currentItem, 'photostack-showback' );
 				}
-
+				/*
 				var el = document.getElementById("photostack-back-mod");
 				if (classie.has(el,"photostack-perspective")) {
 				    classie.remove(el,"sweet");
 				} else {
 				    classie.add(el,"photostack-perspective");
-				}
+				}*/
 
 
 			}
@@ -501,11 +501,8 @@
 
 				var el = document.getElementById("photostack-back-mod");
 				if (classie.has(el,"photostack-perspective")) {
-				    classie.remove(el,"sweet");
 				} else {
 				    classie.add(el,"photostack-perspective");
-				    classie.add(el,"photostack-current");
-				    classie.add(el,"photostack-flip");
 				}
 			}
 
