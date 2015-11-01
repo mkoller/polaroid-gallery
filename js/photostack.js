@@ -499,11 +499,7 @@
 					classie.addClass( this.currentItem, 'photostack-showback' );
 				}
 
-				var el = document.getElementById("photostack-back-mod");
-				if (classie.has(el,"photostack-perspective")) {
-				} else {
-				    classie.add(el,"photostack-perspective");
-				}
+				vein.inject('figure', {'backface-visibility' : 'visible !important'});
 			}
 
 			this.flipped = !this.flipped;
