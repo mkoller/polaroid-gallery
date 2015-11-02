@@ -308,10 +308,6 @@ figure.photostack-current::after {
 	transform: scale(0.61);
 }
 
-/*.photostack-perspective {
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-}*/
 
 figcaption {
 	-webkit-backface-visibility: hidden;

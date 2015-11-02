@@ -473,19 +473,10 @@
 				if( support.preserve3d ) {
 					this.currentItem.style.WebkitTransform = 'translate(' + this.centerItem.x + 'px,' + this.centerItem.y + 'px) rotateY(0deg)';
 					this.currentItem.style.transform = 'translate(' + this.centerItem.x + 'px,' + this.centerItem.y + 'px) rotateY(0deg)';
-					console.log('photo has been flipped back to front');
 				}
 				else {
 					classie.removeClass( this.currentItem, 'photostack-showback' );
 				}
-				/*
-				var el = document.getElementById("photostack-back-mod");
-				if (classie.has(el,"photostack-perspective")) {
-				    classie.remove(el,"sweet");
-				} else {
-				    classie.add(el,"photostack-perspective");
-				}*/
-
 
 			}
 			else {
@@ -493,7 +484,6 @@
 				if( support.preserve3d ) {
 					this.currentItem.style.WebkitTransform = 'translate(' + this.centerItem.x + 'px,' + this.centerItem.y + 'px) translate(' + this.sizes.item.width + 'px) rotateY(-179.9deg)';
 					this.currentItem.style.transform = 'translate(' + this.centerItem.x + 'px,' + this.centerItem.y + 'px) translate(' + this.sizes.item.width + 'px) rotateY(-179.9deg)';
-					console.log('photo has been flipped back');
 				}
 				else {
 					classie.addClass( this.currentItem, 'photostack-showback' );
